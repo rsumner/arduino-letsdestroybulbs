@@ -184,9 +184,9 @@ void buttonEvent(AceButton* button, uint8_t eventType, uint8_t buttonState) {
     case AceButton::kEventReleased:
       break;
     case AceButton::kEventPressed:
-      if(button->getPin() == 6) running = true;
+      if(button->getPin() == PLAYBUTTON_PIN) running = true;
 
-      if(button->getPin() == 7 && running == false) {
+      if(button->getPin() == STOPBUTTON_PIN && running == false) {
         bulb1.initBulb();
         bulb2.initBulb();
         bulb3.initBulb();
@@ -194,7 +194,7 @@ void buttonEvent(AceButton* button, uint8_t eventType, uint8_t buttonState) {
         displayMiniReport();
       }
 
-      if(button->getPin() == 7 && running == true) running=false;
+      if(button->getPin() == STOPBUTTON_PIN && running == true) running=false;
 
       break;
   }
