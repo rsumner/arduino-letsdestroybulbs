@@ -15,3 +15,9 @@ It utilizes the following hardware component and electrical components:
 * 2 x Mini Buttons
 * 1 x Active Buzzer
 
+It depends on the following published Arduino libraries:
+
+* [ACS712](https://github.com/rkoptev/ACS712-arduino)
+* [Relay](https://github.com/rafaelnsantos/Relay)
+* [AceButton](https://github.com/bxparks/AceButton)
+* [LiquidCrystal_PCF8574](http://www.mathertel.de/Arduino/LiquidCrystal_PCF8574.aspx)

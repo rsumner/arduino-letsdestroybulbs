@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+libraries=["LiquidCrystal_PCF8574","ACS712 Current Sensor","AceButton",{"package"\:"arduino","platform"\:"avr","library"\:"Wire"},"Relay"]
